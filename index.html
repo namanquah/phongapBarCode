@@ -4,6 +4,7 @@
 <head>
 <script src="phonegap.js"></script>
 <script src="cordova.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
 <script src="barcodescanner.js"></script>
 
 	
@@ -21,9 +22,12 @@
   </div>
 
   <div data-role="content">
+   <p>
+    <button id="startScan">Start Scan</button>
+    </p>
       
       <a href="#" id="barcodescanner" data-role="button" >Scan a bar code</a>
-    
+     <div id="results"></div>
   </div>
 
   <div data-role="footer">
