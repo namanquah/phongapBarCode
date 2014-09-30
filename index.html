@@ -6,8 +6,6 @@
 <script src="cordova.js"></script>
 <script src="barcodescanner.js"></script>
 
-		<link rel="stylesheet" href="themeroller/themes/mwctheme.zip.min.css" />
-	<link rel="stylesheet" href="themeroller/themes/jquery.mobile.icons.min.css" />
 	
 <link rel="stylesheet" href="jqm/jquery.mobile-1.4.0.min.css">
 <script src="jqm/jquery-1.11.0.min.js"></script>
@@ -24,7 +22,7 @@
 
   <div data-role="content">
       
-      <a href="#barcodescanner" >Scan a bar code</a>
+      <a href="#" id="barcodescanner" data-role="button" >Scan a bar code</a>
     
   </div>
 
@@ -45,6 +43,7 @@
 <!-- this script is for the offlines storage demo -->
 <script>
 $('#barcodescanner').click(function(){
+alert('clicked');
 
  cordova.plugins.barcodeScanner.scan(
       function (result) {
