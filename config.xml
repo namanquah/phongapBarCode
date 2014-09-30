@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns   = "http://www.w3.org/ns/widgets"
+        xmlns:gap   = "http://phonegap.com/ns/1.0"
+        id          = "com.namanquah.pg1"
+        versionCode = "11" 
+        version     = "1.0.0" >
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>MWC-BarCodeDemo</name>
+
+    <description>
+        Demo 2 for MWC fall 2015
+    </description>
+
+    <author href="http://www.ashesi.edu.gh" email="namanquah@gmail.com">
+        N Amanquah 
+    </author>
+
+
+	 <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
+
+</widget>
