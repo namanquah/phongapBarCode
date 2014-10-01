@@ -7,7 +7,7 @@
 
     <!-- versionCode is optional and Android only -->
 
-    <name>MWC-BarCodeDemo</name>
+    <name>MWC-BarCodeDemo 2</name>
 
     <description>
         Demo 2 for MWC fall 2015
@@ -18,6 +18,6 @@
     </author>
 
 
-	 <gap:plugin name="com.phonegap.plugins.barcodescanner" version="2.0.0" />
+	 <gap:plugin name="com.phonegap.plugins.barcodescanner" />
 
 </widget>

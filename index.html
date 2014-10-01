@@ -2,12 +2,7 @@
 
 <html>
 <head>
-<script src="phonegap.js"></script>
-<script src="cordova.js"></script>
-<script type="text/javascript" src="js/app.js"></script>
-<script src="barcodescanner.js"></script>
 
-	
 <link rel="stylesheet" href="jqm/jquery.mobile-1.4.0.min.css">
 <script src="jqm/jquery-1.11.0.min.js"></script>
 <script src="jqm/jquery.mobile-1.4.0.min.js"></script>
@@ -17,13 +12,13 @@
 <div data-role="page" id="pageone">
   <div data-role="header">
      <a href="#" data-role="button" data-icon="home">Home</a>
-    <h1>Barcode Scanner Demo</h1>
+    <h1>Barcode Scanner Demo 2</h1>
 
   </div>
 
   <div data-role="content">
    <p>
-    <button id="startScan">Start Scan</button>
+    <button id="startScan" >Start Scan</button>
     </p>
       
       <a href="#" id="barcodescanner" data-role="button" >Scan a bar code</a>
@@ -36,34 +31,15 @@
 </div> 
 
 
-
-
-
-
 </body>
 </html>
 
 
-<!-- this script is for the offlines storage demo -->
+<!-- this script is for the barcode scanner -->
+<script type="text/javascript" src="cordova.js"></script>
+<script src="barcodescanner.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
 <script>
-$('#barcodescanner').click(function(){
-alert('clicked');
-
- cordova.plugins.barcodeScanner.scan(
-      function (result) {
-          alert("We got a barcode\n" +
-                "Result: " + result.text + "\n" +
-                "Format: " + result.format + "\n" +
-                "Cancelled: " + result.cancelled);
-      }, 
-      function (error) {
-          alert("Scanning failed: " + error);
-      }
-   );
-
-
-});
-
-
-
-  </script>
+document.addEventListener("deviceready", init, false);
+</script>

@@ -1,8 +1,12 @@
 var resultDiv;
 
-document.addEventListener("deviceready", init, false);
+
 function init() {
 	document.querySelector("#startScan").addEventListener("touchend", startScan, false);
+
+	$("#barcodescanner").on("click",function(){
+  startScan();
+});
 	resultDiv = document.querySelector("#results");
 }
 
